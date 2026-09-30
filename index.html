@@ -72,6 +72,8 @@ button{font-family:inherit;cursor:pointer;background:none;border:none;color:inhe
 .page{display:none;padding-top:var(--hd-h);min-height:100vh}
 .page.is-active{display:block;animation:pageIn .6s cubic-bezier(.22,.7,.2,1) both}
 @keyframes pageIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.page.is-active .pg-title,.page.is-active .hero-name{animation:titleReveal .8s cubic-bezier(.2,.7,.2,1) .12s both}
+@keyframes titleReveal{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
 
 /* reveals */
 .rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
@@ -502,7 +504,7 @@ footer{border-top:1px solid var(--line);background:var(--bg2)}
   <div class="hero wrap">
     <div class="hero-l">
       <p class="mono term rv in">~/Arpit-Vishwakarma <b>$</b> whoami</p>
-      <h class="hero-name">ARPIT<i>.</i></h>
+      <h1 class="hero-name">ARPIT VISHWAKARMA<i>.</i></h1>
       <p class="hero-role">Data Analyst <span class="dim">/</span> Python Dev <span class="dim">/</span> Web &amp; SaaS</p>
       <p class="hero-sub">MCA student who turns raw data into decisions — Python, SQL and Excel on one side, web &amp; SaaS engineering on the other. Two years of hands-on MIS, accounting and development, and counting.</p>
       <div class="hero-chips">
@@ -782,7 +784,7 @@ footer{border-top:1px solid var(--line);background:var(--bg2)}
 <section class="page" id="page-contact">
   <div class="wrap pg-hd">
     <p class="pg-crumb mono rv">INDEX / 05 · SIGNAL</p>
-    <h1 class="pg-title">LET'S TALK DATA<i>.</i></h1>
+    <h1 class="pg-title">LET'S TALK<i>.</i></h1>
     <p class="pg-lede rv">Internships, analyst roles, freelance dashboards or just a good question — my inbox is open.</p>
   </div>
   <div class="wrap contact-grid">
